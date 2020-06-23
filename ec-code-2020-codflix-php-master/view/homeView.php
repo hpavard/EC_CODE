@@ -6,9 +6,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="title">Cod<span>'Flix</span></h1>
-                    <p>
-                        <strong>Bienvenue</strong>
-                    </p>
+                    <p><strong>Bienvenue</strong></p>
                 </div>
             </div>
             <div class="row btn-container">
@@ -20,7 +18,7 @@
                 I used the same existing CSS class as the title to make it placed in the center of the row.
             -->
             <div class="row btn-container">
-                <div class="col-md-12"><a href="./view/contact.php" class="btn btn-block">Nous contacter</a></div>
+                <div class="col-md-12"><a href="contact.php" class="btn btn-block">Nous contacter</a></div>
             </div>
         </div>
     </div>
