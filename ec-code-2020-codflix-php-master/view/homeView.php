@@ -17,10 +17,10 @@
             </div>
             <!-- 
                 Adding another row button container with a contact button on the inside at the bottom of the home page.
-                I used the same existing css as the title to make it placed in the center of the row.
+                I used the same existing CSS class as the title to make it placed in the center of the row.
             -->
             <div class="row btn-container">
-                <div class="col-md-12"><a href="contact.php" class="btn btn-block">Nous contacter</a></div>
+                <div class="col-md-12"><a href="./view/contact.php" class="btn btn-block">Nous contacter</a></div>
             </div>
         </div>
     </div>
