@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION['role'] = 'admin';
+?>
+
 <?php ob_start(); ?>
 
 <div id="home">

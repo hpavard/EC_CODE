@@ -1,10 +1,6 @@
 <?php
 session_start();
-$_SESSION['user'] =
-[
-  'email' => 'coding@gmail.com',
-  'password' => '123456'
-]
+$_SESSION['role'] = 'admin';
 ?>
 
 <?php ob_start(); ?>
@@ -19,14 +15,15 @@ $_SESSION['user'] =
 
           <form method="post" action="index.php?action=login" class="custom-form">
 
+          <!-- Values added to email and password -->
             <div class="form-group">
               <label for="email">Adresse email</label>
-              <input type="email" name="email" value="" id="email" class="form-control" />
+              <input type="email" name="email" value="coding@gmail.com" id="email" class="form-control" />
             </div>
 
             <div class="form-group">
               <label for="password">Mot de passe</label>
-              <input type="password" name="password" id="password" class="form-control" />
+              <input type="password" name="password" value = 123456 id="password" class="form-control" />
             </div>
 
             <div class="form-group">

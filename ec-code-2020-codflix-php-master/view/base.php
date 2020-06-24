@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION['role'] = 'admin';
+?>
+
 <!DOCTYPE html>
 <html>
   <head>

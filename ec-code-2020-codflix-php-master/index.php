@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['role'] = 'admin';
 
 require_once( 'controller/homeController.php' );
 require_once( 'controller/loginController.php' );
@@ -46,3 +47,5 @@ else:
   endif;
 
 endif;
+
+?>
