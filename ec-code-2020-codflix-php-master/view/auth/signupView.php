@@ -1,5 +1,7 @@
 <?php ob_start(); ?>
 
+<?php include('server.php') ?>
+
 <div class="landscape">
   <div class="bg-black">
     <div class="row no-gutters">
@@ -9,10 +11,11 @@
           <h3>Inscription</h3>
 
           <form method="post" action="index.php?action=signup" class="custom-form">
+          <?php include('errors.php'); ?>
 
             <div class="form-group">
               <label for="email">Adresse email</label>
-              <input type="email" name="email" value="" id="email" class="form-control" />
+              <input type="email" name="email" value="<?php echo $email; ?>" id="email" class="form-control" />
             </div>
 
             <div class="form-group">
