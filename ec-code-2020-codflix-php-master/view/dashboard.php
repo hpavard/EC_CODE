@@ -24,7 +24,7 @@ unset($_SESSION['role']);
         <div class="sidebar-menu">
           <ul>
             <li class="active"><a href="/CodFlix/">Médias</a></li>
-            <li><a href="#">Nous contacter</a></li>
+            <li><a href="contact.php">Nous contacter</a></li>
             <li><a href="index.php?action=logout">Me déconnecter</a></li>
           </ul>
         </div>
