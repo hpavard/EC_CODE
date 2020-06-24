@@ -1,3 +1,12 @@
+<?php
+session_start();
+$_SESSION['user'] =
+[
+  'email' => 'coding@gmail.com',
+  'password' => '123456'
+]
+?>
+
 <?php ob_start(); ?>
 
 <div class="landscape">

@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once( 'controller/homeController.php' );
 require_once( 'controller/loginController.php' );
