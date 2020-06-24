@@ -10,8 +10,8 @@ function init_db() {
     $host     = 'localhost';
     $dbname   = 'codflix';
     $charset  = 'utf8';
-    $user     = 'root';
-    $password = '';
+    $user     = 'codflix';
+    $password = 'codflix';
 
     $db = new PDO( "mysql:host=$host;dbname=$dbname;charset=$charset", $user, $password );
 
