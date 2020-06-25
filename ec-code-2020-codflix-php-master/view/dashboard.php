@@ -22,7 +22,8 @@ unset($_SESSION['role']);
           <h2 class="title">Bienvenue</h2>
           <div class="sidebar-menu">
             <ul>
-              <!-- Adding new links to the media list page and to the contact page -->
+              <!-- Adding new links -->
+              <li><a href="index.php?profile">Mon profil</a></li>
               <li><a href="index.php?mediaListView">Médias</a></li>
               <li><a href="contact.php">Nous contacter</a></li>
               <li><a href="index.php?action=logout">Me déconnecter</a></li>
