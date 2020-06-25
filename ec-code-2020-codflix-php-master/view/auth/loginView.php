@@ -15,6 +15,7 @@ $_SESSION['role'] = 'admin';
 
           <form method="post" action="index.php?action=login" class="custom-form">
 
+          <!-- User email and password first added ton database -->
           <!-- Values added to email and password -->
             <div class="form-group">
               <label for="email">Adresse email</label>
