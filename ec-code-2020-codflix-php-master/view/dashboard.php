@@ -15,40 +15,45 @@ unset($_SESSION['role']);
   </head>
 
   <body>
-  
-    <div class="banner">
-      <div class="wrapper d-flex align-items-stretch">
-        <nav id="sidebar">
-          <h2 class="title">Bienvenue</h2>
-          <div class="sidebar-menu">
-            <ul>
-              <!-- Adding new links -->
-              <li><a href="index.php?profile">Mon profil</a></li>
-              <li><a href="index.php?mediaListView">Médias</a></li>
-              <li><a href="contact.php">Nous contacter</a></li>
-              <li><a href="index.php?action=logout">Me déconnecter</a></li>
-            </ul>
-          </div>
-        </nav>
 
-          <!-- Page Content  -->
-        <div id="content">
-          <div class="header">
-            <h2 class="title">Cod<span>'Flix</span></h2>
-            <div class="toggle-menu d-block d-md-none">
-              <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                <i class="fas fa-bars"></i>
-                <span class="sr-only">Toggle Menu</span>
-              </button>
-            </div>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <h2 class="title">Bienvenue</h2>
+        <div class="sidebar-menu">
+          <ul>
+            <!-- Adding new links -->
+            <li><a href="index.php?profile">Mon profil</a></li>
+            <li><a href="index.php?mediaListView">Médias</a></li>
+            <li><a href="contact.php">Nous contacter</a></li>
+            <li><a href="index.php?action=logout">Me déconnecter</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <div class="header">
+          <h2 class="title">Cod<span>'Flix</span></h2>
+          <div class="toggle-menu d-block d-md-none">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fas fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
           </div>
-          <div class="content p-4">
+        </div>
+        <div id="home">
+          <div class="banner">
+            <div class="content p-4">
             <?= $content; ?>
           </div>
-          <footer>Copyright Cod'Flix</footer>
-        </div>
+          </div>
+          </div>
+
+        <footer>Copyright Cod'Flix</footer>
+
       </div>
     </div>
+  </div>
 
     <script src="public/lib/jquery/js/jquery-3.5.0.min"></script>
     <script src="public/lib/bootstrap/js/bootstrap.min.js"></script>
