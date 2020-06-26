@@ -38,6 +38,8 @@ unset($_SESSION['role']);
 
 <!--
 
+Try to display media informations
+
 <?php
 session_start();
 unset($_SESSION['role']);
