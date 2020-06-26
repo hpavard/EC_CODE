@@ -34,3 +34,32 @@ unset($_SESSION['role']);
 <?php $content = ob_get_clean(); ?>
 
 <?php require('dashboard.php'); ?>
+
+
+<!--
+
+<?php
+session_start();
+unset($_SESSION['role']);
+?>
+
+<?php ob_start(); ?>
+
+<?php
+$bdd = new PDO('mysql:host=localhost;dbname=test', 'root', 'root');
+$answer = $bdd->query('SELECT genre_id, title, type, status, release_date, summary, trailer_url FROM media');
+while ($data = $answer->fetch())
+{
+    echo '<p>' . '- Titre :' . $data['title'] . '</p>';
+    echo '<p>' . '- Type :' . $data['type'] . '</p>';
+    echo '<p>' . '- Statut :' . $data['status'] . '</p>';
+    echo '<p>' . '- Date de sortie :' . $data['release_date'] . '</p>';
+    echo '<p>' . '- Synopsis :' . $data['summary'] . '</p>';
+    echo '<p>' . '- Bande annonce :' . $data['trailer_url'] . '</p>';
+}
+?>
+
+<?php $content = ob_get_clean(); ?>
+<?php require('dashboard.php'); ?>
+
+-->

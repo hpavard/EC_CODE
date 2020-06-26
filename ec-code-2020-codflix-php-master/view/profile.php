@@ -5,9 +5,15 @@ unset($_SESSION['role']);
 
 <?php ob_start(); ?>
 
-<div class="row">
-</div>
-
+<?php
+$bdd = new PDO('mysql:host=localhost;dbname=test', 'root', 'root');
+$answer = $bdd->query('SELECT email, password FROM user');
+while ($data = $answer->fetch())
+{
+    echo '<p>' . '- Adresse email :' . $data['email'] . '</p>';
+    echo '<p>' . '- Mot de passe :' . $data['password'] . '</p>';
+}
+?>
 
 <?php $content = ob_get_clean(); ?>
 <?php require('dashboard.php'); ?>
